@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ricardo Ohara">
+	<meta name="description" content="design web e logo">
+	<title>RO DESIGN</title>
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+
+<!--MENU-->
+	<header class="header">
+
+		<nav class="menu">
+			<a href="index.html">Home</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#servicos">Serviços</a>
+			<a href="#ferramentas">Ferramentas</a>
+			<a href="#downloads">Downloads</a>
+			<a href="#sobre">Sobre Mim</a>
+			<a href="#contato">Contato</a>
+		</nav>
+		<nav class="social">
+			
+			<a href="#" class="fab fa-instagram"></a>
+			<a href="#" class="fab fa-facebook-f"></a>
+			<a href="mailto:ricardo.ohara20@gmail.com" class="fas fa-envelope"></a>
+
+		</nav>
+
+	</header>
+<!--MENU-->
+
+<!--SCROLL TO TOP-->
+<button onclick="scrollTopFunction()" id="btnTop" title="Ir para o topo"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
+<script src="JS/scroll.js"></script>
+<!--SCROLL TO TOP-->
+
+<!--MENU MOBILE-->
+	<div class="nav-mobile">
+		<img src="img/logo.png" />
+
+		<span id="icon-open" class="icon" onclick="openNav()">&#9776;</span>
+		<nav id="sideMobile" class="menu-mobile">
+			<a href="javascript:void(0);" class="closebtn" onclick="closeNav()" id="icon-close">&times;</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#servicos">Serviços</a>
+			<a href="#ferramentas">Ferramentas</a>
+			<a href="#downloads">Downloads</a>
+			<a href="#sobre">Sobre Mim</a>
+			<a href="#contato">Contato</a>
+		</nav>
+	</div>
+<!--MENU MOBILE-->
+
+<!--LOGOTIPO-->
+	<div class="logotipo">
+		<img src="img/logo.png" />
+	</div>
+<!--LOGOTIPO-->
+
+<!--PORTFOLIO-->
+	<div id="portfolio">
+		<p class="title portfolio">Portfolio</p>
+		<p class="descricao portfolio-desc">
+			Em construção
+		</p>
+	</div>
+<!--PORTFOLIO-->
+
+<!--SERVICOS-->
+	<div id="servicos">
+		<p class="title servicos">Serviços</p>
+		<p class="descricao servicos-desc"></p>
+	</div>
+<!--SERVICOS-->
+
+<!--FERRAMENTAS-->
+	<div id="ferramentas">
+		<p class="title ferramentas">Ferramentas</p>
+		<p class="descricao ferramentas-desc">
+			<div class="container row">
+				<div class="item">
+					<i class="fab fa-html5"></i>
+					<p class="descricao ferramentas-desc">
+						HTML5
+					</p>
+				</div>
+				<div class="item">
+					<i class="fab fa-css3-alt"></i>
+					<p class="descricao ferramentas-desc">
+						CSS3
+					</p>
+				</div>
+				<div class="item">
+					<i class="fab fa-js"></i>
+					<p class="descricao ferramentas-desc">
+						Javascript
+					</p>
+				</div>
+				<div class="item">
+					<img src="img/adobe-illustrator.svg" style="width: 50px;">
+					<p class="descricao ferramentas-desc">Adobe Illustrator</p>
+				</div>
+				<div class="item">
+					<img src="img/adobe-photoshop.svg" style="width: 50px;">
+					<p class="descricao ferramentas-desc">Adobe Photoshop</p>
+				</div>
+			</div>
+		</p>
+	</div>
+<!--FERRAMENTAS-->
+
+<!--DOWNLOADS-->
+	<div id="downloads">
+		<p class="title downloads">Downloads</p>
+		<p class="descricao downloads-desc"></p>
+		
+		<div class="container-downloads row-downloads">
+			<div class="item-downloads">
+				<img src="download.jpg" alt="download" class="imgDownload" id="myImg">
+				<button class="btnDownloads"><a href="#"><i class="fas fa-download"></i></a></button>
+			</div>
+			<div class="item-downloads">2</div>
+			<div class="item-downloads">3</div>
+			
+		</div>
+		<!--
+		<ul class="downloads-galeria">
+				<li><a href="#img1"><img src="download.jpg" class="min"></a></li>
+		</ul>
+			<div class="lbox" id="img1">
+				<div class="box_img">
+					<a href="" class="btn" id="closeImg">X</a>
+					<img src="download.jpg">
+				</div>
+			</div>
+		-->
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="closeImg">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+	<script src="JS/downloads.js"></script>
+<!--DOWNLOADS-->
+
+<!--SOBRE MIM-->
+	<div id="sobre">
+		<p class="title sobre">Sobre Mim</p>
+		<p class="descricao sobre-desc">
+			Estudante do curso Ciências da Computação da Universidade Estadual de Maringá, iniciante no ramo de design, procuro aperfeiçoar técnicas
+			para o desenvolvimento na parte de design e construção de sites. Estou a procura de trabalhos, para que eu possa montar meu portfólio, por isso
+			aceitei o desafio de realizar trabalhos de graça. Caso tenha interesse em pelo menos consultar o meu trabalho, posso mandar o trabalho pronto sem
+			cobrar por isso, ideal para que tem orçamento baixo para realização desse tipo de trabalho.
+		</p>
+	</div>
+<!--SOBRE MIM-->
+
+<!--CONTATO-->
+	<div id="contato">
+		<p class="title contato">Contato</p>
+
+		<p class="contato-desc">
+			<i class="fas fa-map-marker-alt"></i>Maringá - PR
+		</p>
+
+		<p class="contato-desc">
+			<i class="fas fa-envelope"></i>Email: ricardo.ohara20@gmail.com
+		</p>
+
+		<div class="pgContato">
+			<div class="contato-form">
+				<div class="formContato">
+					<form id="formContato" tabindex="1" action="enviar.php" method="post">
+						<input id="nome" name="nome" type="text" placeholder="Nome" />
+						<input id="email" name="email" type="text" placeholder="Email" />
+						<textarea id="conteudo" name="conteudo" placeholder="Deixe sua mensagem"></textarea>
+						<button class="botaoContato" type="submit">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+<!--CONTATO-->
+
+<!--FOOTER-->
+<footer class="footer">
+	<p class="footer">&#169;2018 Rodesign</p>
+</footer>
+
+	<script src="JS/index.js"></script>
+
+</body>
+</html>
